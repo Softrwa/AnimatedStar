@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.star-container {
+    width: 100px; /*You can Adjust the size of the star*/
+    height: 100px;
+}
+.star {
+    fill: none;
+    stroke: #ffd700;
+    /* Adjust the color of the star */
+    stroke-width: 2;
+    animation: drawStar 3s ease-in-out forwards;
+}
+@keyframes drawStar {
+    from {
+        stroke-dasharray: 0;
+    }
+    to {
+        stroke-dasharray: 180;
+    }
+}
